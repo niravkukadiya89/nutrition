@@ -1,0 +1,32 @@
+<!--Carousel Starts-->
+<section id="video">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="content-header">HTML Video</div>
+    </div>
+  </div>
+  <div class="row" matchHeight ="card">
+    <!--Global configuration of carousels Starts-->
+    <div class="col-lg-12 col-xl-6">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Onclick of Image open HTML 5 Video</h4>
+        </div>
+        <div class="card-body">
+          <div class="card-block" *ngIf="buttonName">
+              <img src="assets/img/video-image.jpg" alt="Random first slide" width="700" (click)="toggle()">
+          </div>
+          <div class="card-body" *ngIf="show">
+            <video controls poster="/images/w3html5.gif"  width="700" >
+              <source src="movie.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Global configuration of carousels Starts-->
+  </div>
+</section>
+<!--Carousel Ends-->
